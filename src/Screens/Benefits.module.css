@@ -1,0 +1,143 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  padding-bottom: 100px;
+}
+
+.benefitTitle {
+  padding-top: 125px;
+  font-size: 40px; /* Tamaño del texto "Recetas Compartir" */
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.benefitDescription {
+  font-size: 16px; /* Tamaño del texto de la descripción */
+  color: #56585e;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.textamarillobox {
+  padding-top: 55px;
+  font-size: 16px; /* Tamaño del texto de la descripción */
+  color: #0d141a;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0px;
+  max-width: 600px;
+  margin-left: 60px
+}
+.descripcionboox {
+  font-size: 16px; /* Tamaño del texto de la descripción */
+  color: #56585e;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 90px;
+  max-width: 600px;
+  margin-left: 60px
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.image {
+  width: 296px; /* Ajusta el ancho de las imágenes */
+  height: 500px; /* Ajusta la altura de las imágenes */
+  border-radius: 15px;
+}
+
+.customerReviewsTitle {
+  padding-top: 90px;
+  font-size: 48px; /* Tamaño del texto "Opiniones de clientes" */
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customerReviewsDescription {
+  font-size: 16px; /* Tamaño del texto de la descripción */
+  color: #56585e;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+/* Contenedor para las reseñas */
+.reviewContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px; /* Ajusta el tamaño máximo del contenedor para controlar el espacio disponible */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.reviewBox {
+  background-color: #ffd700;
+  padding: 20px;
+  border-radius: 5px;
+  width: calc(50% - 10px);  /* Ajusta el ancho de cada cuadro para que ocupen la mitad del contenedor */
+  height: 300px; /* Ajusta la altura aquí si deseas especificar un tamaño fijo */
+  box-sizing: border-box;
+  color: #56585e;
+  font-size: 16px;
+  display: flex; /* Asegura que el contenido dentro del cuadro se ajuste correctamente */
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido al inicio de la caja */
+  position: relative; /* Para posicionar el círculo de imagen de perfil */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+/* Contenedor para la imagen de perfil */
+.profileImage {
+  position: absolute;
+  top: 186px; /* Ajusta la posición vertical */
+  left: 20px; /* Ajusta la posición horizontal */
+  width: 50px; /* Tamaño del círculo */
+  height: 50px; /* Tamaño del círculo */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  background-image: url('../assets/profile-bg.jpg'); /* Añade tu imagen de perfil aquí */
+  background-size: cover; /* Asegura que la imagen cubra el círculo */
+  background-position: center; /* Centra la imagen en el círculo */
+  border: 3px solid #fff; /* Opcional: añade un borde blanco alrededor del círculo */
+}
+
+.reviewBox p, .reviewBox h4 {
+  position: relative; /* Para asegurar que el texto esté por encima de la imagen */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen de fondo */
+}
+
+.reviewTextContainer {
+  margin-left: 180px; /* Ajusta este margen para dejar espacio para la imagen de perfil */
+  display: flex;
+  flex-direction: column;
+}
+
+.adjustableTextContainer {
+  margin-left: 0px; /* Cambia este valor para mover el texto hacia la izquierda o derecha */
+}
+
+.reviewBox h4 {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.estrellitas {
+  color: #1a1a1a;
+  margin-top: auto; /* Mueve las estrellitas al final de la caja */
+  margin-bottom: 10px; /* Añade espacio debajo de las estrellas */
+}
+
+

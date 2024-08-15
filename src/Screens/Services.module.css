@@ -1,0 +1,75 @@
+/* Services.module.css */
+
+.home {
+  margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
+}
+
+.services {
+  display: flex;
+  padding: 0; /* Ajusta el padding para que no haya espacio blanco */
+  align-items: center;
+  flex-direction: row; /* Cambia la dirección de flexión a fila */
+  background: linear-gradient(0deg, #000000, #000000);
+  margin-top: -72px; /* Ajusta si es necesario para alinear con precisión */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px; /* Ajusta el espacio entre el texto y la imagen */
+  color: #f1f1f1;
+  padding-left: 200px; /* Separación del borde izquierdo */
+}
+
+.title {
+  font-size: 3.5em; /* Ajusta el tamaño del título según lo necesario */
+  font-family: Lato;
+  font-weight: 700;
+  margin-bottom: 20px; /* Ajusta el espacio debajo del título */
+}
+
+.description {
+  font-size: 1.5em; /* Tamaño del texto del párrafo */
+  font-family: Lato;
+  font-weight: 400;
+  margin-bottom: 20px; /* Ajusta el espacio debajo del párrafo */
+}
+
+.discoverButton {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+  border: 2px solid black; /* Borde negro */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.discoverButton:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: black; /* Texto negro al pasar el cursor */
+  border-color: white; /* Borde blanco al pasar el cursor */
+}
+
+.webImage {
+  width: 500px; /* Ajusta el tamaño de la imagen según lo necesario */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  border-radius: 10px; /* Quita las esquinas de la imagen */
+  border: 2px solid #f1f1f1; /* Borde visible en color blanco para mantener visibilidad */
+  margin-left: 30px; /* Espacio entre la imagen y el borde izquierdo */
+}
+
+@media (min-width: 800px) {
+  .services {
+    padding: 200px; /* Ajusta el padding para pantallas más grandes */
+  }
+  .webImage {
+    width: 600px; /* Ajusta el tamaño de la imagen para pantallas más grandes */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 20px; /* Mantiene el borde redondeado */
+    margin-left: 70px; /* Espacio entre la imagen y el borde izquierdo */
+  }
+}

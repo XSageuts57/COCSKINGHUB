@@ -1,0 +1,74 @@
+.howWeWork {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 180px;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffd700, #ffd700);
+}
+
+.title {
+  font-size: 3.5em;
+  color: #1a1a1a;
+  font-family: Lato;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #56585e;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5; /* Ajusta el espacio entre líneas */
+}
+
+.profile {
+  display: block; /* Hace que 'perfil' esté en una línea separada */
+  text-align: right; /* Alinea el texto a la derecha */
+  font-weight: bold; /* Opcional: haz que 'perfil' se destaque */
+}
+
+.stepContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 130px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  margin: 0;
+}
+
+.step img {
+  width: 138%;
+  height: auto;
+  border-radius: 22px;
+  display: block;
+}
+
+.stepTitle {
+  padding-top: 26px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #0d141a;
+  margin: 5px 0;
+  text-align: left; /* Alinea el texto a la izquierda */
+  width: 135%; /* Asegura que ocupe todo el ancho del contenedor */
+}
+
+.stepDescription {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #56585e;
+  text-align: left; /* Alinea el texto a la izquierda */
+  width: 135%; /* Asegura que ocupe todo el ancho del contenedor */
+  padding-bottom: 10px;
+}
+

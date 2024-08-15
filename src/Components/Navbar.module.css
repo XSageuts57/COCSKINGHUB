@@ -1,0 +1,118 @@
+/* Asegúrate de agregar este enlace en el <head> de tu index.html */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.navBar {
+  display: flex;
+  height: 70px; /* Aumento en la altura de la barra */
+  width: 100%;
+  position: fixed; /* La barra estará siempre visible */
+  top: 0; /* Asegura que esté en la parte superior */
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c7faf2; /* Color de fondo cambiado */
+  font-family: 'Lato', sans-serif; /* Cambio a Lato Bold */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.navOpen {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #0a806c;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.navLink {
+  margin-top: 20px;
+  display: flex;
+  font-size: 2em;
+  font-weight: 700; /* Fuente en negrita */
+  color: #000000; /* Color del texto cambiado a negro */
+  padding-top: 90px;
+  font-family: 'Lato', sans-serif;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  color: #2ac78b; /* Color del texto al pasar el mouse */
+}
+
+@keyframes animacionborder {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 1px;
+  }
+}
+
+.logo {
+  margin-top: 20px;
+  display: flex;
+  color: #000000; /* Color del texto cambiado a negro */
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    font-size: 1.5em;
+  }
+  .navBar {
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px; /* Ajuste de altura */
+  }
+  .linksContainer {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .navLink {
+    font-weight: 700; /* Fuente en negrita */
+    padding-top: 4px;
+    font-size: 1.4em;
+    transition: 0.5s;
+  }
+  .navLink:hover {
+    font-size: 1.5em;
+  }
+}
+
+.navOnScroll {
+  display: flex;
+  height: 70px; /* Ajuste de altura */
+  width: 100%;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c7faf2; /* Color de fondo cambiado */
+  font-family: 'Lato', sans-serif; /* Cambio a Lato Bold */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.contactLink {
+  margin-top: 20px;
+  color: #000000; /* Color del texto cambiado a negro */
+  font-size: 1.5em;
+  font-weight: 400;
+  background-color: #508094;
+  border-radius: 4px;
+  padding: 3px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+}
+
+.contactLink:hover {
+  background-color: #3a6577;
+  color: #ffffff;
+  cursor: pointer;
+}
